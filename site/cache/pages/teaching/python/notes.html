@@ -1,0 +1,133 @@
+<h2 id="python-notes">Python Notes<a class="headerlink" href="#python-notes" title="Permanent link">&para;</a></h2>
+<p><em><strong>Introduction to Python for Econometrics, Statistics and Numerical Analysis: Fourth+ Edition</strong></em> </p>
+<p><a href="#notes">Download the Notes</a></p>
+<p>Python is a widely used general purpose programming language, which
+happens to be well suited to econometrics, data analysis and other more
+general numeric problems. These notes provide an introduction to Python
+for a beginning programmer. They may also be useful for an experienced
+Python programmer interested in using NumPy, SciPy, matplotlib and
+pandas for numerical and statistical analysis (if this is the case, much
+of the beginning can be skipped).</p>
+<p class="alert alert-info">New material added to the fourth edition on September 2020.</p>
+<h3 id="since-the-fourth-edition">Since the Fourth edition<a class="headerlink" href="#since-the-fourth-edition" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added coverage of context managers (<code>with</code> <em>method</em> <code>as</code> <em>variable</em>) as the preferred way to open and close files.</li>
+<li>Changed examples to use context managers where appropriate.</li>
+</ul>
+<h3 id="fourth-edition">Fourth edition<a class="headerlink" href="#fourth-edition" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Python 3.8 is the recommended version. The notes require Python 3.6 or later, and all references to Python 2.7 have been removed.</li>
+<li>Removed references to NumPy's matrix class and clarified that it should not be used.</li>
+<li>Verified that all code and examples work correctly against 2020 versions of modules. The notable packages and their versions are:</li>
+<li>Python 3.8 (Preferred version), 3.6 (Minimum version)</li>
+<li>NumPy: 1.19.1</li>
+<li>SciPy: 1.5.2</li>
+<li>pandas: 1.1.1</li>
+<li>matplotlib: 3.3.1</li>
+<li>Introduced f-Strings in Section [subsec:f-Strings] as the preferred way to format strings using modern Python. The notes use f-String where possible instead of format.</li>
+<li>Added coverage of Windowing function – rolling, expanding and ewm – to the pandas chapter.</li>
+<li>Expanded the list of packages of interest to researchers working in statistics, econometrics and machine learning.</li>
+<li>Expanded description of model classes and statistical tests in statsmodels that are most relevant for econometrics. Added section detailing formula support. This list represents on a small function of the statsmodels API. </li>
+<li>Added minimize as the preferred interface for non-linear function optimization in Chapter [chap:Non-linear-Function-Optimization].</li>
+<li>Python 2.7 support has been officially dropped, although most examples continue to work with 2.7. Do not Python 2.7 for numerical code.</li>
+<li>Small typo fixes, thanks to Marton Huebler.</li>
+<li>Fixed direct download of FRED data due to API changes, thanks to Jesper Termansen.</li>
+<li>Thanks for Bill Tubbs for a detailed read and multiple typo reports.</li>
+<li>Updated to changes in line profiler (see Ch. [chap:performance-and-optimization])</li>
+<li>Updated deprecations in pandas.</li>
+<li>Removed hold from plotting chapter since this is no longer required.</li>
+<li>Thanks for Gen Li for multiple typo reports.</li>
+</ul>
+<h3 id="third-edition-update-1">Third edition, Update 1<a class="headerlink" href="#third-edition-update-1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Verified that all code and examples work correctly against 2019 versions of modules. The
+   notable packages and their versions are:</li>
+<li>Python 3.7 (Preferred version)</li>
+<li>NumPy: 1.16</li>
+<li>SciPy: 1.3</li>
+<li>pandas: 0.25</li>
+<li>matplotlib: 3.1</li>
+<li>Python 2.7 support has been officially dropped, although most examples continue to work with 2.7.
+   <strong>Do not Python 2.7 in 2019 for numerical code</strong>.</li>
+</ul>
+<h3 id="third-edition-update">Third edition update<a class="headerlink" href="#third-edition-update" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Rewritten installation section focused exclusively on using
+    Continuum\'s Anaconda.</li>
+<li>Python 3.5 is the default version of Python instead of 2.7. Python
+    3.5 (or newer) is well supported by the Python packages required to
+    analyze data and perform statistical analysis, and bring some new
+    useful features, such as a new operator for matrix multiplication
+    (@).</li>
+<li>Removed distinction between integers and longs in built-in data
+    types chapter. This distinction is only relevant for Python 2.7.</li>
+<li>dot has been removed from most examples and replaced with @ to
+    produce more readable code.</li>
+<li>Split Cython and Numba into separate chapters to highlight the
+    improved capabilities of Numba.</li>
+<li>Verified all code working on current versions of core libraries
+    using Python 3.5.</li>
+<li>pandas<ul>
+<li>Updated syntax of pandas functions such as resample.</li>
+<li>Added pandas Categorical.</li>
+<li>Expanded coverage of pandas groupby.</li>
+<li>Expanded coverage of date and time data types and functions.</li>
+</ul>
+</li>
+<li>New chapter introducing statsmodels, a package that facilitates
+    statistical analysis of data. statsmodels includes regression
+    analysis, Generalized Linear Models (GLM) and time-series analysis
+    using ARIMA models.</li>
+</ul>
+<h3 id="second-edition-update">Second edition update<a class="headerlink" href="#second-edition-update" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Improved Cython and Numba sections</li>
+<li>Added sections discussing interfacing with C code</li>
+<li>Added sections to the chapter on running code in Parallel covering
+    IPython\'s cluster server and joblib</li>
+<li>Further improvements in the installation based on feedback from the
+    <a href="">Python Course</a></li>
+<li>Updated Anaconda to 1.9</li>
+<li>Added information about using Spyder as an initial IDE.</li>
+<li>Added packages for Spyder to the installation instructions.</li>
+</ul>
+<h4>New in second edition</h4>
+<ul>
+<li>The preferred installation method is now Continuum Analytics\'
+    Anaconda. Anaconda is a complete scientific stack and is available
+    for all major platforms.</li>
+<li>New chapter on pandas. pandas provides a simple but powerful tool to
+    manage data and perform basic analysis. It also greatly simplifies
+    importing and exporting data.</li>
+<li>New chapter on advanced selection of elements from an array.</li>
+<li>Numba provides just-in-time compilation for numeric Python code
+    which often produces large performance gains when pure NumPy
+    solutions are not available (e.g. looping code).</li>
+<li>Addition to performance section covering line_profiler for
+    profiling code.</li>
+<li>Dictionary, set and tuple comprehensions.</li>
+<li>Numerous typos fixed.</li>
+<li>All code has been verified working against Anaconda 1.7.0.</li>
+</ul>
+<h3 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h3>
+<h4>Current Edition</h4>
+<p><a href="/files/teaching/python/notes/python_introduction_2020.pdf">Introduction to Python for Econometrics, Statistics and Numerical Analysis: Fourth Edition</a></p>
+<h4><em>Archived Versions</em></h4>
+<p><a href="/files/teaching/python/notes/python_introduction_2019.pdf">Third Edition</a></p>
+<h3 id="data-and-notebooks">Data and Notebooks<a class="headerlink" href="#data-and-notebooks" title="Permanent link">&para;</a></h3>
+<h4>Data</h4>
+<ul>
+<li><a href="/files/teaching/python/notes/code_from_notes.zip">Data and Code</a> from the notes. These files are needed to run some of the code in the notes.</li>
+<li>The <a href="/files/teaching/python/notes/FamaFrench.zip">Fama-French data set</a> is used in the asset-pricing examples.</li>
+<li>The <a href="/files/teaching/python/notes/FTSE_1984_2012.zip">FTSE 100 data</a> from 1984 until 2012 is used in the GJR-GARCH example.</li>
+</ul>
+<h4>Notebooks</h4>
+<p>These notebooks contains the four extended examples from the Examples chapter.</p>
+<ul>
+<li><a href="/teaching/python/notes/notebooks/example-gjr-garch/">Estimation of a GJR-GARCH model</a> <a href="/files/teaching/python/notes/example-gjr-garch.ipynb">(download)</a></li>
+<li><a href="/teaching/python/notes/notebooks/example-fama-macbeth/">Estimation of risk premia using Fama-MacBeth</a> <a href="/files/teaching/python/notes/example-fama-macbeth.ipynb">(download)</a></li>
+<li><a href="/teaching/python/notes/notebooks/example-gmm-estimation/">Estimation using the Generalized Method of Moments (GMM)</a> <a href="/files/teaching/python/notes/example-gmm.ipynb">(download)</a></li>
+<li><a href="/teaching/python/notes/notebooks/example-latex-output/">Outputting to LaTeX</a> <a href="/files/teaching/python/notes/example-latex.ipynb">(download)</a></li>
+</ul>
+<h4>Mini-course</h4>
+<p><a href="link://filename/pages/teaching/python/course.md">Python Course</a></p>

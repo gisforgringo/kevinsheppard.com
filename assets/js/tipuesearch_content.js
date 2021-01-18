@@ -458,7 +458,7 @@ var tipuesearch = {
     },
     {
       "title": "MFE Teaching Resources",
-      "text": "MFE Financial Econometrics I\u00b6\nThe Michaelmas term and Hilary term\ncourse websites contain all of the Financial Econometrics I and II material. \nNotes\u00b6\nThe complete set of notes covers all aspects of the Financial Econometrics I and II courses. \nComputation\u00b6\nPython\u00b6\nThe introduction course and companion course\nare designed to accompany Financial Econometrics I and II and\nto provide tools needed in Empirical Asset pricing. This course is substantially self-supported.\nArchive\u00b6\nOlder courses that are not currently offered.\nAdvanced Financial Econometrics: Forecasting (2020)\u00b6\nThe course website for Advanced Financial Econometrics: Forecasting contains all material distributed in Trinity Term 2020.",
+      "text": "MFE Financial Econometrics Course Sites\u00b6\nThe course websites contain all of the Financial Econometrics I and II material.  \nFinancial Econometrics I (Michaelmas) \nFinancial Econometrics II (Hilary)\nNotes\u00b6\nThe complete set of notes covers all aspects of the Financial Econometrics I and II courses. \nComputation\u00b6\nPython\u00b6\nThe introduction course and companion course\nare designed to accompany Financial Econometrics I and II and\nto provide tools needed in Empirical Asset pricing. This course is substantially self-supported.\nArchive\u00b6\nOlder courses that are not currently offered.\nAdvanced Financial Econometrics: Forecasting (2020)\u00b6\nThe course website for Advanced Financial Econometrics: Forecasting contains all material distributed in Trinity Term 2020.",
       "tags": "",
       "url": "https://www.kevinsheppard.com/teaching/mfe/"
     },
